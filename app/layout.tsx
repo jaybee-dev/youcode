@@ -18,15 +18,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<PropsWithChildren>) {
   return (
-      <html lang="en" className="h-full" suppressHydrationWarning>
+    <html lang="en" className="h-full" suppressHydrationWarning>
         <head />
         <body
           className={cn(
             'h-full bg-background font-sans antialiased',
             fontSans.variable
           )}
-        >
-          <Providers>
+          >
+            <Providers>
             <div className="relative flex min-h-screen flex-col">
               <Header />
               <div className="flex-1">{children}</div>

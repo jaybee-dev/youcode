@@ -3,6 +3,7 @@ import { Typography } from '@/components/ui/typography';
 import { SiteConfig } from '@/lib/site-config';
 import Image from 'next/image';
 import Link from 'next/link';
+import { LoginButton } from '../ui/LoginButton';
 
 export function Header() {
   return (
@@ -17,6 +18,7 @@ export function Header() {
 
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
+            <LoginButton />
             <ThemeToggle />
           </nav>
         </div>
